@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+.contenedorAll {
+    font-family: 'Raleway', sans-serif;
+    background-color: #100E1D;
+}
+
+/*INICIO DE SECTION DE PRIMRA VISTA EN MOVIL */
+.sectionInicial {
+    padding: 40px 30px;
+    position: relative;
+    height: 100vh;
+    background-color: #1E213A;
+    border-radius: 10px;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.busca {
+    background-color: #6E707A;
+    height: 40px;
+    width: 145px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.busca::placeholder {
+    color: #fff;
+}
+
+.local {
+    height: 40px;
+    width: 40px;
+    background-color: #6E707A;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.fa-location-crosshairs {
+    color: #E7E7EB;
+    font-size:22px;
+}
+
+ .gradosC {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.temperatura {
+    display: flex;
+    align-items: end;
+}
+
+.temperatura>h1 {
+    font-size: 130px;
+    font-weight: 500;
+    color: #E7E7EB;
+}
+
+.temperatura>p {
+    font-weight: 100;
+    font-size: 60px;
+    color: #A09FB1;
+    margin-bottom: 10px;
+}
+
+.shower {
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #A09FB1;
+}
+
+.fecha {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #88869D;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.p {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.divLugar {
+    display: flex;
+    gap: 10px;
+}
+
+.fa-location-dot {
+    color: #88869D;
+}
+
+/* FINAL DE SECTION DE PRIMRA VISTA EN MOVIL */
+
+.sectionSegunda {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 280px;
+}
+
+#estadoDirect {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#today {
+    color: #E7E7EB;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.sectionNav {
+    height: 100%;
+    padding: 30px 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #1E213A;
+}
+
+.divbtnX {
+    display: flex;
+    justify-content: end;
+}
+
+.btnX {
+    padding: 20px;
+    cursor: pointer;
+    color: #E7E7EB;
+}
+
+.divbuscar {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divbuscar>div {
+    position: relative;
+    display: inline-block;
+}
+
+.divbuscar>div>input {
+    height: 48px;
+    width: 200px;
+    padding-left: 35px;
+    background-color: transparent;
+    color: #616475;
+    border: 1px solid #616475;
+}
+
+.divbuscar>div>i {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #616475;
+}
+
+.divbuscar>button {
+    height: 48px;
+    width: 86px;
+    background-color: #3C47E9;
+    color: #E7E7EB;
+    border: 0;
+    cursor: pointer;
+}
+
+#lastP{
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lastP > p {
+    color:#A09FB1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1280px) {
+      
+    .contenedorAll {
+        font-family: 'Raleway', sans-serif;
+        background-color: #100E1D;
+        display: flex;
+    }
+
+    .contenedorCardsEstados {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+
+    #title {
+        width: 100%;
+        display: flex;
+        text-align: start;
+    }
+
+    .sectionInicial {
+        width: 30%;
+        height: auto;
+        position: relative;
+        border-radius: 0;
+    }
+
+    .gradosC>p {
+        margin-top: 50px;
+        font-size: 36px;
+        font-weight: 600;
+        color: #A09FB1;
+    }
+
+    .sectionSegunda {
+        width: 85%;
+        height: auto;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cards {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #estadoDirect {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+
+}
